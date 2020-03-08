@@ -8,6 +8,7 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 
 object QzDwdService {
   //test_git1
+  //i have a dream
   def getQzChapter(ssc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
     val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzChapter.log")
