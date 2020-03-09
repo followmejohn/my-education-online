@@ -1,6 +1,7 @@
 package com.john.warehouse.qz.service
 
 import com.alibaba.fastjson.JSONObject
+import com.john.warehouse.bean.{QzPageViewContainer, QzPointContainer, QzQuestionContainer}
 import com.john.warehouse.util.ParseJsonData
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
@@ -92,7 +93,7 @@ object QzDwdService {
         val pointlist = jsonObject.getString("pointlist")
         val dt = jsonObject.getString("dt")
         val dn = jsonObject.getString("dn")
-        (pointid, courseid, pointname, pointyear, chapter, creator, createtime, status, modifystatus, excisenum, pointlistid,
+        QzPointContainer(pointid, courseid, pointname, pointyear, chapter, creator, createtime, status, modifystatus, excisenum, pointlistid,
           chapterid, sequence, pointdescribe, pointlevel, typeslist, score, thought, remid, pointnamelist, typelistids,
           pointlist, dt, dn)
       }
@@ -304,7 +305,7 @@ object QzDwdService {
         val paperuseshow = jsonObject.getString("paperuseshow")
         val dt = jsonObject.getString("dt")
         val dn = jsonObject.getString("dn")
-        (paperviewid, paperid, paperviewname, paperparam, openstatus, explainurl, iscontest, contesttime,
+        QzPageViewContainer(paperviewid, paperid, paperviewname, paperparam, openstatus, explainurl, iscontest, contesttime,
           conteststarttime, contestendtime, contesttimelimit, dayiid, status, creator, createtime, paperviewcatid, modifystatus,
           description, papertype, downurl, paperuse, paperdifficult, testreport, paperuseshow, dt, dn)
       }
@@ -312,7 +313,7 @@ object QzDwdService {
   }
   def getQzPaper(ssc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCenterPaper.log")
+    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPaper.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -341,7 +342,7 @@ object QzDwdService {
   }
   def getQzCenterPaper(ssc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPaper.log")
+    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCenterPaper.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -450,7 +451,7 @@ object QzDwdService {
         val vdeoaddr = jsonObject.getString("vdeoaddr")
         val dt = jsonObject.getString("dt")
         val dn = jsonObject.getString("dn")
-        (questionid, parentid, questypeid, quesviewtype, content, answer, analysis, limitminute, score, splitscore,
+        QzQuestionContainer(questionid, parentid, questypeid, quesviewtype, content, answer, analysis, limitminute, score, splitscore,
           status, optnum, lecture, creator, createtime, modifystatus, attanswer, questag, vanalysisaddr, difficulty, quesskill,
           vdeoaddr, dt, dn)
       }

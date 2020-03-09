@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
 
 object QzDwdController {
   def main(args: Array[String]): Unit = {
-    val conf: SparkConf = new SparkConf().setAppName("qz").setMaster("local[*]")
+    val conf: SparkConf = new SparkConf().setAppName("qz")//.setMaster("local[*]")
     val spark: SparkSession = SparkSession.builder().config(conf).enableHiveSupport().getOrCreate()
     val ssc: SparkContext = spark.sparkContext
     HiveUtil.openDynamicPartition(spark)
