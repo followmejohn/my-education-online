@@ -11,7 +11,7 @@ object AdsMemberService {
     val sourceDs: Dataset[QueryResult] = AdsMemberDao.getMemberData(spark).as[QueryResult].where(s"dt=${dt}")
     sourceDs.cache()
     //统计注册来源url人数
-    sourceDs.mapPartitions(p => p.map(it => (it.appregurl + it.dn + it.dt, 1)))
+    sourceDs.mapPartitions(p => p.map(it => (it.appregurl + "_" + it.dn + "_" + it.dt, 1)))
       .groupByKey(_._1)
       .mapValues(it => it._2)
       .reduceGroups(_ + _)
@@ -24,7 +24,7 @@ object AdsMemberService {
       }).toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("ads.ads_register_appregurlnum")
       //各所属网站（sitename）的用户数
     sourceDs.mapPartitions(partiton => {
-      partiton.map(item => (item.sitename + item.dn +  item.dt, 1))
+      partiton.map(item => (item.sitename + "_" + item.dn +"_"+  item.dt, 1))
     }).groupByKey(_._1)
       .mapValues(item => item._2)
       .reduceGroups(_ + _)

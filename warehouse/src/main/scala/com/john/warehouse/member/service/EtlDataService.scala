@@ -8,9 +8,9 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 
 object EtlDataService {
 
-  def etlMember(ssc: SparkContext, spark: SparkSession)={
+  def etlMember(sc: SparkContext, spark: SparkSession)={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/member.log")
+    sc.textFile("/user/john/ods/member.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {
@@ -42,9 +42,9 @@ object EtlDataService {
       }).toDF().coalesce(2)
       .write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_member")
   }
-  def etlMemberRegtype(ssc: SparkContext, spark: SparkSession): Unit ={
+  def etlMemberRegtype(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/memberRegtype.log")
+    sc.textFile("/user/john/ods/memberRegtype.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {
@@ -71,9 +71,9 @@ object EtlDataService {
         })
       }).toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_member_regtype")
   }
-  def etlBaseAd(ssc: SparkContext, spark: SparkSession): Unit ={
+  def etlBaseAd(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/baseadlog.log")
+    sc.textFile("/user/john/ods/baseadlog.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {
@@ -85,9 +85,9 @@ object EtlDataService {
         })
       }).toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_base_ad")
   }
-  def etlBaseWebsite(ssc: SparkContext, spark: SparkSession): Unit ={
+  def etlBaseWebsite(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/baswewebsite.log")
+    sc.textFile("/user/john/ods/baswewebsite.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {
@@ -103,9 +103,9 @@ object EtlDataService {
         })
       }).toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_base_website")
   }
-  def etlPcentermempaymoney(ssc: SparkContext, spark: SparkSession): Unit ={
+  def etlPcentermempaymoney(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/pcentermempaymoney.log")
+    sc.textFile("/user/john/ods/pcentermempaymoney.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {
@@ -120,9 +120,9 @@ object EtlDataService {
         })
       }).toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_pcentermempaymoney")
   }
-  def etlVipLevel(ssc: SparkContext, spark: SparkSession): Unit ={
+  def etlVipLevel(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    ssc.textFile("/user/john/ods/pcenterMemViplevel.log")
+    sc.textFile("/user/john/ods/pcenterMemViplevel.log")
       .filter(data=> ParseJsonData.getJsonData(data).isInstanceOf[JSONObject])
       .mapPartitions(partition => {
         partition.map(item => {

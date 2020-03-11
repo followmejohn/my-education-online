@@ -10,9 +10,9 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 object QzDwdService {
   //test_git1
   //i have a dream
-  def getQzChapter(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzChapter(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzChapter.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzChapter.log")
     sourceRdd.filter{it=>
       val obj= ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -37,9 +37,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(2).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_chapter")
   }
-  def getQzChapterList(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzChapterList(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzChapterList.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzChapterList.log")
     sourceRdd.filter{it=>
       val obj= ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -60,9 +60,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_chapter_list")
   }
-  def getQzPoint(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzPoint(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPoint.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzPoint.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -99,9 +99,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_point")
   }
-  def getQzPointQuestion(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzPointQuestion(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPointQuestion.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzPointQuestion.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -119,9 +119,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_point_question")
   }
-  def getQzSiteCourse(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzSiteCourse(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzSiteCourse.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzSiteCourse.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -148,9 +148,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_site_course")
   }
-  def getQzCourseEduSubject(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzCourseEduSubject(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCourseEduSubject.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzCourseEduSubject.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -169,9 +169,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_course_edusubject")
   }
-  def getQzCourse(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzCourse(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCourse.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzCourse.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -196,9 +196,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_course")
   }
-  def getQzWebSite(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzWebSite(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzWebsite.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzWebsite.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -223,9 +223,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_website")
   }
-  def getQzMajor(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzMajor(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzMajor.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzMajor.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -248,9 +248,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_major")
   }
-  def getQzBusiness(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzBusiness(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzBusiness.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzBusiness.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -270,9 +270,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_business")
   }
-  def getQzPaperView(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzPaperView(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPaperView.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzPaperView.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -311,9 +311,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_paper_view")
   }
-  def getQzPaper(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzPaper(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzPaper.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzPaper.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -340,9 +340,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_paper")
   }
-  def getQzCenterPaper(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzCenterPaper(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCenterPaper.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzCenterPaper.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -362,9 +362,9 @@ object QzDwdService {
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_center_paper")
   }
 
-  def getQzCenter(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzCenter(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzCenter.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzCenter.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -391,9 +391,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_center")
   }
-  def getQzQuestionType(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzQuestionType(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzQuestionType.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzQuestionType.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -418,9 +418,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_question_type")
   }
-  def getQzQuestion(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzQuestion(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzQuestion.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzQuestion.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
@@ -457,9 +457,9 @@ object QzDwdService {
       }
     }.toDF().coalesce(1).write.mode(SaveMode.Overwrite).insertInto("dwd.dwd_qz_question")
   }
-  def getQzMemberPaperQuestion(ssc: SparkContext, spark: SparkSession): Unit ={
+  def getQzMemberPaperQuestion(sc: SparkContext, spark: SparkSession): Unit ={
     import spark.implicits._
-    val sourceRdd: RDD[String] = ssc.textFile("/user/john/ods/QzMemberPaperQuestion.log")
+    val sourceRdd: RDD[String] = sc.textFile("/user/john/ods/QzMemberPaperQuestion.log")
     sourceRdd.filter{it=>
       val obj: JSONObject = ParseJsonData.getJsonData(it)
       obj.isInstanceOf[JSONObject]
