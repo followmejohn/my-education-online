@@ -1,16 +1,14 @@
 package com.john.producer
 
 import java.util.Properties
-
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
-
 object RegisterProducer {
   def main(args: Array[String]): Unit = {
     val conf: SparkConf = new SparkConf().setAppName("register").setMaster("local[*]")
     val ssc = new SparkContext(conf)
-    val rdd: RDD[String] = ssc.textFile(this.getClass.getResource("/register.log").toURI.getPath,10)
+    val rdd: RDD[String] = ssc.textFile("/user/john/ods/register.log",10)
     rdd.foreachPartition(p=>{
       val prop = new Properties()
       prop.put("bootstrap.servers","hadoop102:9092,hadoop103:9092,hadoop104:9092")

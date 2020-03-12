@@ -1,50 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63ca2356-0918-46dc-bb51-d0c92ef59cfe" name="Default Changelist" comment="" />
-    <list id="500e7737-5adf-466e-9fe9-94dee40b5264" name="20200311 sparkStreaming开始" comment="">
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/comerce.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/course_learn.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/page.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/qz.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/register.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/DataSourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseJsonData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/SqlPorxy.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/bean/DwdCourseShoppingCart.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/bean/DwdSaleCourse.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/controller/QzAdsController.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzAdsDao.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/service/QzAdsService.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwdSellCourseController.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwdSellCourseController2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController4.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/dao/DwsSellCourseDao.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/service/DwdSellCourseService.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/service/DwsSellCourseService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+    <list default="true" id="63ca2356-0918-46dc-bb51-d0c92ef59cfe" name="Default Changelist" comment="20200311 sparkStreaming开始">
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/hive-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/LearnModel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/QzPointStreaming.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/AdsMemberController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/AdsMemberController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/DwdMemberController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/DwdMemberController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/DwsMemberController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/DwsMemberController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/service/AdsMemberService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/service/AdsMemberService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/service/EtlDataService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/service/EtlDataService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/controller/QzDwdController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/controller/QzDwdController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/service/QzDwdService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/service/QzDwdService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/util/HiveUtil.scala" beforeDir="false" afterPath="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/util/HiveUtil.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala" beforeDir="false" afterPath="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala" afterDir="false" />
     </list>
+    <list id="500e7737-5adf-466e-9fe9-94dee40b5264" name="20200311 sparkStreaming开始" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/warehouse/target/" />
@@ -71,11 +43,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+            <state relative-caret-position="209">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="e#28#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/QzPointStreaming.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-838">
+              <caret line="88" column="73" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
               <folding>
                 <element signature="e#28#67#0" expanded="true" />
               </folding>
@@ -84,28 +68,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.0/spark-streaming-kafka-0-10_2.11-2.4.0-sources.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sparkStreaming/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="-57">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/SqlPorxy.scala">
+        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="570">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#27#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="1304" column="18" selection-start-line="1304" selection-start-column="18" selection-end-line="1304" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/LearnModel.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/kafka/kafka-clients/2.0.0/kafka-clients-2.0.0.jar!/org/apache/kafka/common/TopicPartition.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ConfigurationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +132,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/DataSourceUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state>
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseJsonData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -142,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzDwsChapterDao.scala" />
-        <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzDwsPaperDao.scala" />
-        <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzDwsQuestionDao.scala" />
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzDwsMajorDao.scala" />
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/dao/QzDwsCourseDao.scala" />
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/qz/service/QzDwsService.scala" />
@@ -167,12 +195,7 @@
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController3.scala" />
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController4.scala" />
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController.scala" />
-        <option value="$PROJECT_DIR$/sparkStreaming/pom.xml" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/sdfs.scala" />
-        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala" />
-        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala" />
-        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala" />
-        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseData.scala" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseData.java" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseJSONObject.java" />
@@ -192,7 +215,15 @@
         <option value="$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/service/DwdSellCourseService.scala" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/DataSourceUtil.java" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/SqlPorxy.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/djslk.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/LearnModel.scala" />
         <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala" />
+        <option value="$PROJECT_DIR$/sparkStreaming/pom.xml" />
+        <option value="$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/QzPointStreaming.scala" />
       </list>
     </option>
   </component>
@@ -213,11 +244,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="warehouse" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="sparkStreaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="warehouse" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="sparkStreaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -273,14 +304,6 @@
               <item name="sparkStreaming" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="education" type="b2602c69:ProjectViewProjectNode" />
-              <item name="education" type="462c0819:PsiDirectoryNode" />
-              <item name="sparkStreaming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,6 +314,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="john" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="education" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education" type="462c0819:PsiDirectoryNode" />
+              <item name="sparkStreaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="john" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="education" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education" type="462c0819:PsiDirectoryNode" />
+              <item name="sparkStreaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="john" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="education" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +352,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="education" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education" type="462c0819:PsiDirectoryNode" />
+              <item name="sparkStreaming" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -319,7 +368,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583942376898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584027314771" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -351,13 +400,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DwsMemberController">
-    <configuration name="DwdMemberController" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.john.warehouse.member.controller.DwdMemberController" />
-      <module name="warehouse" />
+  <component name="RunManager" selected="Application.RegisterStreaming">
+    <configuration name="CourseLearnProducer" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.john.producer.CourseLearnProducer" />
+      <module name="sparkStreaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.john.warehouse.member.controller.*" />
+          <option name="PATTERN" value="com.john.producer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,12 +415,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwsMemberController" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.john.warehouse.member.controller.DwsMemberController" />
-      <module name="warehouse" />
+    <configuration name="PageLogProducer" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.john.producer.PageLogProducer" />
+      <module name="sparkStreaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.john.warehouse.member.controller.*" />
+          <option name="PATTERN" value="com.john.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QzLogProducer" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.john.producer.QzLogProducer" />
+      <module name="sparkStreaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.john.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterProducer" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.john.producer.RegisterProducer" />
+      <module name="sparkStreaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.john.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterStreaming" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.john.streaming.RegisterStreaming" />
+      <module name="sparkStreaming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.john.streaming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -385,13 +478,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DwdMemberController" />
-      <item itemvalue="Application.DwsMemberController" />
+      <item itemvalue="Application.CourseLearnProducer" />
+      <item itemvalue="Application.RegisterStreaming" />
+      <item itemvalue="Application.PageLogProducer" />
+      <item itemvalue="Application.QzLogProducer" />
+      <item itemvalue="Application.RegisterProducer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DwsMemberController" />
-        <item itemvalue="Application.DwdMemberController" />
+        <item itemvalue="Application.RegisterStreaming" />
+        <item itemvalue="Application.RegisterProducer" />
+        <item itemvalue="Application.QzLogProducer" />
+        <item itemvalue="Application.PageLogProducer" />
+        <item itemvalue="Application.CourseLearnProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +511,8 @@
       <workItem from="1583669503552" duration="7962000" />
       <workItem from="1583716706716" duration="17668000" />
       <workItem from="1583825867054" duration="13261000" />
-      <workItem from="1583910442565" duration="18808000" />
+      <workItem from="1583910442565" duration="18897000" />
+      <workItem from="1583982132572" duration="17674000" />
     </task>
     <task id="LOCAL-00001" summary="git_test1">
       <created>1583656115367</created>
@@ -442,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583942023483</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20200311 sparkStreaming开始">
+      <created>1583942613067</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583942613067</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99260000" />
+    <option name="totallyTimeSpent" value="117023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,9 +566,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.17560321" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.21045576" />
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.26340482" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -469,8 +575,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6926346" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61331445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,7 +584,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.776204" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.37818697" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.40509915" />
@@ -545,48 +651,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="20200311 sparkStreaming开始" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController3.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/sellcourse/controller/DwsSellCourseController4.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/bean/DwdSaleCourse.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="2259" column="24" selection-start-line="2259" selection-start-column="24" selection-end-line="2259" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="938" column="21" selection-start-line="938" selection-start-column="21" selection-end-line="938" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/net/URI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -594,64 +658,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseData.scala" />
     <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.47/fastjson-1.2.47-sources.jar!/com/alibaba/fastjson/JSON.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/resources/comerce.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -662,32 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/dfsa.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseJsonData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ConfigurationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/dfsa.scala" />
     <entry file="file://$PROJECT_DIR$/warehouse/src/main/scala/com/john/warehouse/member/controller/AdsMemberController.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -906,27 +892,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/DataSourceUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/HashOffsetRanges.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sparkStreaming/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/HashOffsetRanges.scala" />
     <entry file="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.0/spark-streaming-kafka-0-10_2.11-2.4.0.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -934,24 +900,152 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.0/spark-streaming-kafka-0-10_2.11-2.4.0-sources.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/resources/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/CourseLearnProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#27#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/PageLogProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="64" />
+          <folding>
+            <element signature="e#27#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/QzLogProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="e#27#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/resources/comerce.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="80" selection-start-column="63" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/SqlPorxy.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="551">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.4.0/spark-streaming-kafka-0-10_2.11-2.4.0-sources.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.scala">
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ConfigurationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+        <state relative-caret-position="485">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/ParseJsonData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/util/DataSourceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/kafka/kafka-clients/2.0.0/kafka-clients-2.0.0.jar!/org/apache/kafka/common/TopicPartition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/bean/LearnModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../jdk1.8/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="1304" column="18" selection-start-line="1304" selection-start-column="18" selection-end-line="1304" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/RegisterStreaming.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        <state relative-caret-position="209">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#28#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/producer/RegisterProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#27#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sparkStreaming/src/main/scala/com/john/streaming/QzPointStreaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-838">
+          <caret line="88" column="73" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
           <folding>
             <element signature="e#28#67#0" expanded="true" />
           </folding>

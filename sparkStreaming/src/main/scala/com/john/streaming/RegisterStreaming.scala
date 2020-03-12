@@ -4,10 +4,10 @@ import java.sql.{Connection, ResultSet}
 
 import com.john.util.{DataSourceUtil, QueryCallback, SqlPorxy}
 import org.apache.kafka.common.TopicPartition
+import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.streaming.kafka010._
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.codehaus.jackson.map.ser.std.StringSerializer
 
 import scala.collection.mutable
 
@@ -20,17 +20,17 @@ object RegisterStreaming {
     //      .set("spark.streaming.stopGracefullyOnShutdown", "true")
     //      .setMaster("local[*]")
     val ssc = new StreamingContext(conf,Seconds(3))
-    val sc: SparkContext = ssc.sparkContext
+//    val sc: SparkContext = ssc.sparkContext
     val topics = Array("register_topic")
     val kafkaMap: Map[String, Object] = Map[String, Object](
       ("bootstrap.servers", "hadoop102:9092,hadoop103:9092,hadoop104:9092"),
-      ("key.deserializer", classOf[StringSerializer]),
-      ("value.deserializer", classOf[StringSerializer]),
+      ("key.deserializer", classOf[StringDeserializer]),
+      ("value.deserializer", classOf[StringDeserializer]),
       ("group.id", groupid),
       ("auto.offset.reset", "earliest"),
       //如果是true，则这个消费者的偏移量会在后台自动提交，但是kafka宕机容易丢失数据
       //如果是false，则需要手动维护kafka偏移量
-      ("enable.auto.commit", false)
+      ("enable.auto.commit", "false")
     )
     //sparkStreaming对有状态的数据操作，需要设定检查点目录，然后将状态保存到检查点中
     ssc.checkpoint("/user/john/sparkstreaming/checkpoint")
@@ -85,6 +85,7 @@ object RegisterStreaming {
     resultDStream.updateStateByKey(updateFunc).print()
     //处理完 业务逻辑后 手动提交offset维护到本地 mysql中
     stream.foreachRDD(rdd=>{
+//      println("dddddddddddddddddddddd")
       val sqlPorxy = new SqlPorxy()
       val client: Connection = DataSourceUtil.getConnection
       try{

@@ -10,7 +10,7 @@ object CourseLearnProducer {
   def main(args: Array[String]): Unit = {
     val conf: SparkConf = new SparkConf().setAppName("course").setMaster("local[*]")
     val ssc = new SparkContext(conf)
-    val rdd: RDD[String] = ssc.textFile(this.getClass.getResource("/course_learn.log").toURI.getPath,10)
+    val rdd: RDD[String] = ssc.textFile("/user/john/ods/course_learn.log",10)
     rdd.foreachPartition(p=>{
       val prop = new Properties()
       prop.put("bootstrap.servers","hadoop102:9092,hadoop103:9092,hadoop104:9092")

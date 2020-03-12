@@ -14,6 +14,7 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.11</artifactId>
+            <scope>provided</scope>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
@@ -24,11 +25,13 @@
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
+            <scope>provided</scope>
             <version>${scala.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-streaming_2.11</artifactId>
+            <scope>provided</scope>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
