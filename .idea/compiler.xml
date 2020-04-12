@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sparkStreaming" />
         <module name="warehouse" />
+        <module name="warehouse2" />
       </profile>
     </annotationProcessing>
   </component>

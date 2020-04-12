@@ -3,8 +3,12 @@ package com.john.streaming
 import java.sql.{Connection, ResultSet}
 
 import com.john.util.{DataSourceUtil, QueryCallback, SqlPorxy}
+import org.apache.hadoop.mapred.JobConf
+import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.TopicPartition
 import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.rdd.RDD
+import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.kafka010._
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
@@ -75,7 +79,7 @@ object RegisterStreaming {
       })
     resultDStream.cache()
     //"=================每6s间隔1分钟内的注册数据================="
-    resultDStream.reduceByKeyAndWindow((x: Int,y: Int)=> x + y, Seconds(60), Seconds(6)).print
+    val value: DStream[(String, Int)] = resultDStream.reduceByKeyAndWindow((x: Int,y: Int)=> x + y, Seconds(60), Seconds(6))
     //"+++++++++++++++++++++++实时注册人数+++++++++++++++++++++++"
     val updateFunc: (Seq[Int], Option[Int]) => Some[Int] = (values: Seq[Int], state: Option[Int]) => {
       val currentCount: Int = values.sum
